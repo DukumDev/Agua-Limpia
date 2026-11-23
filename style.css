@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9fb;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                      url('Aguita.jpg');          
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 25px;
+}
+.hero h1 {
+    color: aqua;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.navbar :hover {
+    color: aquamarine;
+}
+
+.seccion {
+    padding: 70px 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.seccion.alt {
+    background-color: #eaf4f1;
+}
+
+.seccion h2 {
+    color: #002b36;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.seccion p {
+    color: #444;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.sub-solucion {
+    font-size: 1.3rem !important;
+    color: #00838f !important;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: transform 0.15s ease, box-shadow 0.3s ease;
+}
+
+.js .card {
+    opacity: 0;
+}
+
+.js .card.visible {
+    opacity: 1;
+    animation: aparecer 0.7s ease backwards;
+}
+
+.card:hover {
+    box-shadow: 0 12px 25px rgba(0, 131, 143, 0.25);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+    }
+}
+
+.lista-beneficios {
+    list-style: disc;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+
+.footer-cta {
+    background-color: #002b36;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.footer-cta h2 {
+    color: aqua;
+    margin-bottom: 10px;
+}
+
+.footer-cta p {
+    color: #b2dfdb;
+    margin-bottom: 25px;
+}
+
+.btn-contacto {
+    display: inline-block;
+    background-color: aqua;
+    color: #002b36;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-contacto:hover {
+    background-color: #00d8d8;
+}
+
